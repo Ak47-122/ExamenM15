@@ -26,10 +26,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Inserim el text de confirmació en la caixa d'alerta
             missatgeBox.innerHTML = `
-                <strong>¡Reserva realitzada amb èxit!</strong><br>
-                Gràcies <strong>${nomUsuari}</strong>, hem rebut correctament la teva petició de reserva. Ens posarem en contacte amb tu en breu.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>Reserva realitzada amb èxit!</strong><br>
+                    <span></span>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Tanca"></button>
+                </div>
             `;
+            missatgeBox.querySelector('span').textContent =
+                `Gràcies ${nomUsuari}, hem rebut correctament la teva petició de reserva. Ens posarem en contacte amb tu en breu.`;
             
             // Mostrem la caixa eliminant la classe 'd-none'
             missatgeBox.classList.remove('d-none');
