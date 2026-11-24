@@ -1,0 +1,77 @@
+
+/* Estils personalitzats per al Restaurant Sakura Badalona */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #faf7f2;
+}
+
+.carousel-image {
+    height: 100%;
+    object-fit: fill;
+}
+
+.carousel-item {
+    aspect-ratio: 16 / 5;
+    background-color: #faf7f2;
+}
+
+.carousel-caption {
+    right: 12%;
+    bottom: 2rem;
+    left: 12%;
+    padding: 0.5rem 0.75rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0.25rem;
+}
+
+.carousel-caption h5 {
+    margin-bottom: 0.25rem;
+}
+
+.carousel-caption p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+    .carousel-item {
+        aspect-ratio: 2 / 1;
+    }
+
+    .carousel-caption {
+        right: 12%;
+        bottom: 1.75rem;
+        left: 12%;
+        padding: 0.35rem 0.5rem;
+    }
+
+    .carousel-caption h5 {
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.75rem;
+        line-height: 1.2;
+    }
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+.dropdown-menu-dark .dropdown-item:hover {
+    background-color: #dc3545;
+}
+
+.bg-secondary {
+    --bs-bg-opacity: 1;
+    background-color: #dc3545 !important;
+}
